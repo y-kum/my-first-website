@@ -12,8 +12,8 @@ body {
     justify-content: space-between;
     background: #1f2937;
     align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .logo {
@@ -55,8 +55,8 @@ a {
     padding: 100px;
     background: #1f2937;
     gap: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -77,11 +77,15 @@ a {
     color: #e5e7eb;
     font-size: 18px;
 }
-img {
-    flex: 0 0 auto;
-    height: auto;
-    width: 300px;
+
+.placeholder {
+    background-color:#e5e7eb;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+    flex: 1;
 }
+
 
 .first {
     color: #e5e7eb;
@@ -99,8 +103,8 @@ img {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
     gap: 30px;
     align-items: center;
 }
@@ -146,10 +150,10 @@ img {
     background-color: #e5e7eb;
     flex-direction: column;
     padding: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-
+45
 .quotation {
     font-size: 36px;
     font-style: italic;

@@ -2,10 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <!-- <div class="container">
+            <h1>Theme Switcher</h1>
+            <button id="switch" onclick="toggleTheme()">Switch</button>
+        </div> -->
         <div class="header">
             <div class="logo">Header Logo</div>
             <div class="top-links">
@@ -13,6 +18,7 @@
                     <li><a href="link1.html">header link one</a></li>
                     <li><a href="link2.html">header link two</a></li>
                     <li><a href="link3.html">header link three</a></li>
+                    <button id="Switch" onclick="toggleTheme()">Switch Theme</button>
                 </ul>
             </div>
         </div>
@@ -61,5 +67,30 @@
         <div class="footer">
             <p>Copyright © The Odin Project 2021</p>
         </div>
+        <script>
+            
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+    
+            
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+    
+            
+            (function () {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-dark');
+                } else {
+                    setTheme('theme-light');
+                }
+            })();
+        </script>
     </body>
 </html>

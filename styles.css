@@ -7,36 +7,69 @@ body {
     flex: 0 0 auto;
 }
 
+.theme-light {
+    --color-primary: #f4f5ef;
+    --color-secondary: #fbfbfe;
+    --color-accent: #20325e;
+    --font-color: #000000;
+  }
+  .theme-dark {
+    --color-primary: #0e172e;
+    --color-secondary: #212222;
+    --color-accent: #f7f8ee;
+    --font-color: #ffffff;
+  }
+
 .header {
+    border:var(--color-accent);
+    border-radius: 10px;
+    border-style: solid;
     display: flex;
     justify-content: space-between;
-    background: #1f2937;
+    background: var(--color-primary);
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 .logo {
-    color: #f9faf8;
+    color: var(--font-color);
     font-size: 24px;
     font-weight: 900;
 }
 
 ul {
+    color: var(--font-color);
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
 
+ul switch {
+    color: var(--font-color);
+    background: var(--color-primary);
+
+    font-size: 18px;
+    border:var(--color-accent);
+    border-style:ridge;
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
 a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: var(--font-color)b;
     font-size: 18px;
 }
 
 .footer {
-    background: #1f2937;
-    color: #e5e7eb;
+    border:var(--color-accent);
+    border-radius: 10px;
+    border-style: solid;
+    background: var(--color-primary);
+    color: var(--font-color);
     font-size: 18px;
     text-align: center;
     padding-top: 10px;
@@ -48,12 +81,24 @@ a {
     flex: auto;
     display: flex;
     flex-direction: column;
+    margin: auto auto;
 }
+.container button {
+    color: var(--font-color);
+    background: var(--color-primary);
 
+    font-size: 18px;
+    border:var(--font-color);
+    border-style:ridge;
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 .hero {
     display: flex;
     padding: 100px;
-    background: #1f2937;
+    background: var(--color-primary);
     gap: 40px;
     padding-left: 50px;
     padding-right: 50px;
@@ -68,18 +113,24 @@ a {
 }
 
 .hero-primary {
-    color: #f9faf8;
+    
+    color: var(--font-color);
     font-size: 48px;
     font-weight: bolder;
 }
 
 .hero-secondary {
-    color: #e5e7eb;
+    
+    color: var(--font-color);
     font-size: 18px;
 }
 
 .placeholder {
-    background-color:#e5e7eb;
+    color: var(--font-color);
+    border:var(--color-accent);
+    border-radius: 10px;
+    border-style: solid;
+    background-color:var(--color-primary);
     font-size: 24px;
     text-align: center;
     padding-top: 50px;
@@ -88,8 +139,8 @@ a {
 
 
 .first {
-    color: #e5e7eb;
-    background-color: #3882f6;
+    color: var(--font-color);
+    background-color: var(--color-primary);
     align-self: flex-start;
     font-size: 18px;
     border: none;
@@ -100,6 +151,11 @@ a {
 }
 
 .information {
+    color: var(--font-color);
+    border:var(--color-accent);
+    border-radius: 10px;
+    border-style: solid;
+    background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -112,7 +168,7 @@ a {
 .information-header {
     font-size: 36px;
     font-weight: bolder;
-    color: #1F2937;
+    background-color: var(--color-primary);;
     align-self: center;
     flex: 0 0 auto;
 }
@@ -134,7 +190,7 @@ a {
 }
 
 .Space {
-    border-color: #3882f6;
+    border:var(--color-accent);
     border-radius: 10px;
     border-style: solid;
     height: 125px;
@@ -142,12 +198,17 @@ a {
 }
 
 .info {
+    
     text-align: center;
 }
 
 .quote {
+    color: var(--font-color);
+    border:var(--color-accent);
+    border-radius: 10px;
+    border-style: solid;
     display: flex;
-    background-color: #e5e7eb;
+    background-color: var(--color-primary);
     flex-direction: column;
     padding: 50px;
     padding-left: 100px;
@@ -158,7 +219,7 @@ a {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
-    color: #1f2937;
+    color: var(--color-secondary);
     text-align: justify;
     padding-left: 25px;
     padding-right: 25px;
@@ -171,8 +232,11 @@ a {
 }
 
 .signing {
-    background-color: #3882f6;
-    color: #e5e7eb;
+    border:var(--color-accent);
+    border-radius: 10px;
+    border-style: solid;
+    background-color: var(--color-primary);
+    color: var(--font-color);
     padding: 40px;
     display: flex;
     margin: 100px auto;
@@ -188,10 +252,10 @@ a {
 }
 
 .second {
-    color: #e5e7eb;
-    background-color: #3882f6;
+    color: var(--font-color);
+    background-color: var(--color-primary);
     font-size: 18px;
-    border:#e5e7eb;
+    border:var(--color-accent);
     border-style:ridge;
     border-radius: 10px;
     padding: 5px;
